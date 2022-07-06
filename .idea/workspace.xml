@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9747d3f-9378-4300-955e-d8e51702f26f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/spring_rabbitmq-demo/SpringRabbitMQ.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_rabbitmq-demo/target/test-classes/com/hydsoft/rabbitmq/test/RabbitMQTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring_rabbitmq-demo/target/test-classes/com/hydsoft/rabbitmq/test/RabbitMQTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_rabbitm_retry/src/test/java/com/hydsoft/rabbitmq/retry/test/RabbitMQTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_rabbitm_retry/src/test/java/com/hydsoft/rabbitmq/retry/test/RabbitMQTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +155,7 @@
       <workItem from="1657092515359" duration="99000" />
       <workItem from="1657092695649" duration="63000" />
       <workItem from="1657092845043" duration="21000" />
-      <workItem from="1657092910650" duration="4140000" />
+      <workItem from="1657092910650" duration="4641000" />
     </task>
     <servers />
   </component>

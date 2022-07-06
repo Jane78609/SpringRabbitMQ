@@ -41,7 +41,9 @@ public class RabbitMQTest {
     public void test01() {
         rabbitTemplate.convertAndSend("rabbit.test.exchange.direct.exception.retry", "retry", "this is a test message for consume exception retry");
         try {
-            Thread.sleep(30000);
+            Thread.sleep(60000);
+            //如果未达到最大重试次数 消息依然会在队列中
+            //Thread.sleep(30000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
