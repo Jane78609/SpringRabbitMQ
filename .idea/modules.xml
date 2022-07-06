@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring_rabbitmq-demo/SpringRabbitMQ.iml" filepath="$PROJECT_DIR$/spring_rabbitmq-demo/SpringRabbitMQ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_rabbitmq-retry/SpringRabbitMQ (1).iml" filepath="$PROJECT_DIR$/spring_rabbitmq-retry/SpringRabbitMQ (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_rabbitm_retry/spring_rabbitm_retry.iml" filepath="$PROJECT_DIR$/spring_rabbitm_retry/spring_rabbitm_retry.iml" />
+    </modules>
+  </component>
+</project>

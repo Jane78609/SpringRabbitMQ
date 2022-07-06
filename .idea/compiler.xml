@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="SpringRabbitMQ (1)" />
+        <module name="SpringRabbitMQ" />
+        <module name="spring_rabbitm_retry" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring_rabbitm_retry" target="8" />
+      <module name="SpringRabbitMQ" target="8" />
+      <module name="SpringRabbitMQ (1)" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SpringRabbitMQ" options="-parameters" />
+      <module name="SpringRabbitMQ (1)" options="-parameters" />
+      <module name="spring_rabbitm_retry" options="-parameters" />
+    </option>
+  </component>
+</project>
