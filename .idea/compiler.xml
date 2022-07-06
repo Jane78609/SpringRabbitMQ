@@ -9,9 +9,11 @@
         <module name="SpringRabbitMQ (1)" />
         <module name="SpringRabbitMQ" />
         <module name="spring_rabbitm_retry" />
+        <module name="spring_rabbitm_manual" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="spring_rabbitm_manual" target="8" />
       <module name="spring_rabbitm_retry" target="8" />
       <module name="SpringRabbitMQ" target="8" />
       <module name="SpringRabbitMQ (1)" target="8" />
@@ -21,6 +23,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="SpringRabbitMQ" options="-parameters" />
       <module name="SpringRabbitMQ (1)" options="-parameters" />
+      <module name="spring_rabbitm_manual" options="-parameters" />
       <module name="spring_rabbitm_retry" options="-parameters" />
     </option>
   </component>

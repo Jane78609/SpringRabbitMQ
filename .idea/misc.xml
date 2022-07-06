@@ -6,6 +6,7 @@
         <option value="$PROJECT_DIR$/spring_rabbitmq-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring_rabbitmq-retry/pom.xml" />
         <option value="$PROJECT_DIR$/spring_rabbitm_retry/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_rabbitm_manual/pom.xml" />
       </list>
     </option>
   </component>

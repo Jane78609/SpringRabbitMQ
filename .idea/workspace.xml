@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9747d3f-9378-4300-955e-d8e51702f26f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/spring_rabbitm_retry/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring_rabbitm_retry/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring_rabbitm_retry/src/test/java/com/hydsoft/rabbitmq/retry/test/RabbitMQTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_rabbitm_retry/src/test/java/com/hydsoft/rabbitmq/retry/test/RabbitMQTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_rabbitmq-demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring_rabbitmq-demo/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_rabbitmq-demo/src/test/java/com/hydsoft/rabbitmq/test/RabbitMQTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_rabbitmq-demo/src/test/java/com/hydsoft/rabbitmq/test/RabbitMQTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +58,7 @@
       <recent name="com.hydsoft.rabbitmq.retry" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager" selected="JUnit.RabbitMQTest.test06">
     <configuration name="RabbitMQTest.test01 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring_rabbitm_retry" />
       <extension name="coverage">
@@ -132,9 +135,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RabbitMQTest.test06" />
         <item itemvalue="Spring Boot.Application" />
         <item itemvalue="JUnit.RabbitMQTest.test01 (1)" />
-        <item itemvalue="JUnit.RabbitMQTest.test06" />
         <item itemvalue="JUnit.RabbitMQTest.test01" />
       </list>
     </recent_temporary>
@@ -155,7 +158,9 @@
       <workItem from="1657092515359" duration="99000" />
       <workItem from="1657092695649" duration="63000" />
       <workItem from="1657092845043" duration="21000" />
-      <workItem from="1657092910650" duration="4641000" />
+      <workItem from="1657092910650" duration="4783000" />
+      <workItem from="1657097737755" duration="51000" />
+      <workItem from="1657099269571" duration="2443000" />
     </task>
     <servers />
   </component>

@@ -33,6 +33,8 @@ public class RabbitMQTest {
      * 3、达到最大重试次数之后 如果依然失败 会将消息从队列中移除（消息丢失）
      * 注意：
      * auto模式下 配置重试 可能会造成消息丢失
+     * spring.rabbitmq.listener.simple.retry.enabled=true情况下 达到最大重试次数之后 即使配置spring.rabbitmq.listener.simple.default-requeue-rejected=true
+     * 消息依然会从队列中移除（消息丢失）
      * @Author Jane
      * @Date: 2022/7/6 15:43
      * @Version 1.0

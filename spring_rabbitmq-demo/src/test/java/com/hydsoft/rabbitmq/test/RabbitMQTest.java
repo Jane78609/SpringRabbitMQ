@@ -175,7 +175,7 @@ public class RabbitMQTest {
      * @Description: 测试自动ack模式下 消费异常
      * 当spring.rabbitmq.listener.simple.acknowledge-mode=auto时
      * 消费未发生异常 会自动提交ack 表示消息已消费 队列将消息移除
-     * 如果消费发生异常 消息会再次回到队列中等待被再次消费 相当于手动提交basicNack(deliveryTag,false,true)
+     * 如果消费发生异常 消息会再次回到队列中等待被再次消费 相当于手动提交basicNack() 其中是否重新入队取spring.rabbitmq.listener.simple.default-requeue-rejected配置的值（默认true）
      * 对于核心业务 可以通过配置死信队列 将消费异常的消息发到死信队列存储 待查明原因后 通过死信队列消费者消费
      * @Author Jane
      * @Date: 2022/7/6 11:16

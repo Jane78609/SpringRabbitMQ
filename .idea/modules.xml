@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/spring_rabbitmq-demo/SpringRabbitMQ.iml" filepath="$PROJECT_DIR$/spring_rabbitmq-demo/SpringRabbitMQ.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_rabbitmq-retry/SpringRabbitMQ (1).iml" filepath="$PROJECT_DIR$/spring_rabbitmq-retry/SpringRabbitMQ (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_rabbitm_manual/spring_rabbitm_manual.iml" filepath="$PROJECT_DIR$/spring_rabbitm_manual/spring_rabbitm_manual.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_rabbitm_retry/spring_rabbitm_retry.iml" filepath="$PROJECT_DIR$/spring_rabbitm_retry/spring_rabbitm_retry.iml" />
     </modules>
   </component>
