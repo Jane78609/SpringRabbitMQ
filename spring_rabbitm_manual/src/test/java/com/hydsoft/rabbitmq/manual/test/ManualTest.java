@@ -73,4 +73,44 @@ public class ManualTest {
 
         }
     }
+
+
+    /**
+     * @Description: 测试 死信队列+TTL(time-to-live) 实现延迟队列
+     * @Author Jane
+     * @Date: 2022/7/7 14:39
+     * @Version 1.0
+     */
+    @Test
+    public void test03() {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String now = sdf.format(new Date());
+        logger.info("开始发送订单超时消息，当前时间:{}", now);
+        //发送到超时队列 超时之后 队列消息将会发送到配置的死信交换机对应的死信队列
+        rabbitTemplate.convertAndSend("rabbit.test.exchange.timeout", "timeout", "This is a timeout message to cancel order");
+        try {
+            Thread.sleep(35000);
+        } catch (InterruptedException e) {
+
+        }
+    }
+
+    /**
+     * @Description: 测试 死信队列
+     * 手动提交Ack模式下 通过配置业务队列的死信交换机到死信队列上 当消息消费异常时，设置消息不重新加入队列而是进入死信队列 既不会造成消息的积压 又不会丢失消息
+     * @Author Jane
+     * @Date: 2022/7/7 15:02
+     * @Version 1.0
+     */
+    @Test
+    public void test04() {
+        rabbitTemplate.convertAndSend("rabbit.test.exchange.business", "business", "This is a business message for testing Exception to go to dead queue");
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+
+        }
+    }
+
+
 }

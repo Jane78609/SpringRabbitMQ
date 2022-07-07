@@ -82,4 +82,98 @@ public class ManualListener {
             }
         }
     }
+
+    // @RabbitListener(queues = "rabbit.test.queue.timeout")
+    // public void receiveTimeoutMessage(Message message, Channel channel) {
+    //     byte[] body = message.getBody();
+    //     long deliveryTag = message.getMessageProperties().getDeliveryTag();
+    //     String msg = "";
+    //     try {
+    //         msg = new String(body, "UTF-8");
+    //         logger.info("rabbit.test.queue.timeout receive message:{}", msg);
+    //         channel.basicAck(deliveryTag, false);
+    //     } catch (Exception e) {
+    //         logger.error("consume message :{} error:{}", msg, e.getMessage());
+    //         try {
+    //             channel.basicNack(deliveryTag, false, false);
+    //         } catch (IOException ex) {
+    //             logger.error("basicNack message :{} error:{}", msg, ex.getMessage());
+    //         }finally {
+    //
+    //         }
+    //     }
+    // }
+
+    @RabbitListener(queues = "rabbit.test.queue.dead")
+    public void receiveDeadMessage(Message message, Channel channel) {
+        byte[] body = message.getBody();
+        long deliveryTag = message.getMessageProperties().getDeliveryTag();
+        String msg = "";
+        try {
+            msg = new String(body, "UTF-8");
+            logger.info("rabbit.test.queue.dead receive message:{}", msg);
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            String now = sdf.format(new Date());
+            logger.info("收到订单超时消息，当前时间:{}", now);
+            //订单超时
+            //cancelOrder
+            channel.basicAck(deliveryTag, false);
+        } catch (Exception e) {
+            logger.error("consume message :{} error:{}", msg, e.getMessage());
+            try {
+                channel.basicNack(deliveryTag, false, false);
+            } catch (IOException ex) {
+                logger.error("basicNack message :{} error:{}", msg, ex.getMessage());
+            }finally {
+
+            }
+        }
+    }
+
+    @RabbitListener(queues = "rabbit.test.queue.business")
+    public void receiveBusinessMessage(Message message, Channel channel) {
+        byte[] body = message.getBody();
+        long deliveryTag = message.getMessageProperties().getDeliveryTag();
+        String msg = "";
+        try {
+            msg = new String(body, "UTF-8");
+            logger.info("rabbit.test.queue.business receive message:{}", msg);
+            //模式业务处理异常
+            int i = 1/0;
+            channel.basicAck(deliveryTag, false);
+        } catch (Exception e) {
+            logger.error("consume message :{} error:{}", msg, e.getMessage());
+            try {
+                //配置死信队列情况下 basicNack 消息不重新加入队列情况下 消息会从本队列移除并进入死信队列
+                channel.basicNack(deliveryTag, false, false);
+                logger.warn("rabbit.test.queue.business message:{} prepare to go to dead queue", msg);
+            } catch (IOException ex) {
+                logger.error("basicNack message :{} error:{}", msg, ex.getMessage());
+            }finally {
+
+            }
+        }
+    }
+
+    @RabbitListener(queues = "rabbit.test.queue.business.dead")
+    public void receiveBusinessDeadMessage(Message message, Channel channel) {
+        byte[] body = message.getBody();
+        long deliveryTag = message.getMessageProperties().getDeliveryTag();
+        String msg = "";
+        try {
+            msg = new String(body, "UTF-8");
+            logger.info("rabbit.test.queue.business.dead receive message:{}", msg);
+            channel.basicAck(deliveryTag, false);
+            logger.info("死信队列正常处理完消息，实现故障转移");
+        } catch (Exception e) {
+            logger.error("consume message :{} error:{}", msg, e.getMessage());
+            try {
+                channel.basicNack(deliveryTag, false, false);
+            } catch (IOException ex) {
+                logger.error("basicNack message :{} error:{}", msg, ex.getMessage());
+            }finally {
+
+            }
+        }
+    }
 }

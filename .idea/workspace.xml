@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9747d3f-9378-4300-955e-d8e51702f26f" name="Changes" comment="" />
+    <list default="true" id="c9747d3f-9378-4300-955e-d8e51702f26f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/spring_rabbitm_manual/src/main/java/com/hydsoft/rabbitmq/manual/configuration/ManualConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_rabbitm_manual/src/main/java/com/hydsoft/rabbitmq/manual/configuration/ManualConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_rabbitm_manual/src/main/java/com/hydsoft/rabbitmq/manual/listener/ManualListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_rabbitm_manual/src/main/java/com/hydsoft/rabbitmq/manual/listener/ManualListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_rabbitm_manual/src/test/java/com/hydsoft/rabbitmq/manual/test/ManualTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_rabbitm_manual/src/test/java/com/hydsoft/rabbitmq/manual/test/ManualTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +68,7 @@
       <recent name="com.hydsoft.rabbitmq.retry" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ManualTest.test02">
+  <component name="RunManager" selected="JUnit.ManualTest.test04">
     <configuration name="ManualTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring_rabbitm_manual" />
       <extension name="coverage">
@@ -97,17 +101,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RabbitMQTest.test06" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringRabbitMQ" />
+    <configuration name="ManualTest.test03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_rabbitm_manual" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hydsoft.rabbitmq.test.*" />
+          <option name="PATTERN" value="com.hydsoft.rabbitmq.manual.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.hydsoft.rabbitmq.test" />
-      <option name="MAIN_CLASS_NAME" value="com.hydsoft.rabbitmq.test.RabbitMQTest" />
-      <option name="METHOD_NAME" value="test06" />
+      <option name="PACKAGE_NAME" value="com.hydsoft.rabbitmq.manual.test" />
+      <option name="MAIN_CLASS_NAME" value="com.hydsoft.rabbitmq.manual.test.ManualTest" />
+      <option name="METHOD_NAME" value="test03" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManualTest.test04" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_rabbitm_manual" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hydsoft.rabbitmq.manual.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hydsoft.rabbitmq.manual.test" />
+      <option name="MAIN_CLASS_NAME" value="com.hydsoft.rabbitmq.manual.test.ManualTest" />
+      <option name="METHOD_NAME" value="test04" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,26 +159,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="spring_rabbitm_retry" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hydsoft.rabbitmq.retry.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hydsoft.rabbitmq.retry.Application" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ManualTest.test04" />
+        <item itemvalue="JUnit.ManualTest.test03" />
         <item itemvalue="JUnit.ManualTest.test02" />
         <item itemvalue="JUnit.ManualTest.test01" />
         <item itemvalue="Spring Boot.Application (1)" />
-        <item itemvalue="JUnit.RabbitMQTest.test06" />
-        <item itemvalue="Spring Boot.Application" />
       </list>
     </recent_temporary>
   </component>
@@ -181,7 +188,7 @@
       <workItem from="1657092910650" duration="4783000" />
       <workItem from="1657097737755" duration="51000" />
       <workItem from="1657099269571" duration="2626000" />
-      <workItem from="1657156169146" duration="9053000" />
+      <workItem from="1657156169146" duration="14792000" />
     </task>
     <servers />
   </component>
